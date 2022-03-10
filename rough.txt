@@ -1,0 +1,22 @@
+Restful API
+
+get 
+post
+put
+delete
+fetch
+
+
+customers
+
+api/customer  -- get("/api/customer")       response all customers from database.
+api/customer  -- post("/api/customer",body)       save data of a customer
+api/customer/id  -- get("/api/customer/id")       Retriving the infomation of a particular customer
+api/customer/id  -- put("/api/customer/id")       update the infomation of a particular customer
+api/customer/id  -- delete("/api/customer/id")       update the infomation of a particular customer
+
+
+body={
+  "name":"Muzamil",
+  "id":123
+}
