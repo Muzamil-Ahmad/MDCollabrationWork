@@ -14,9 +14,9 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 // simple route
 const db = require("./models");
-db.sequelize.sync({force: true}).then(() => {
-  console.log("Drop and re-sync db.");
-});
+// db.sequelize.sync({force: true}).then(() => {
+//   console.log("Drop and re-sync db.");
+// });
 app.get("/", (req, res) => {
   debugger
   res.json({message: "Welcome to your first project."});
